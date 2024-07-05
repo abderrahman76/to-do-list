@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+    margin: 0%;
+    padding: 0%; 
+    box-sizing: border-box;
+}
+body{
+  display:flex;
+  justify-content:center;
+  background-image: url(7.jpg);
+  background-size:cover;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.table-container{  
+    padding: 0px auto 10%;
+    margin: 40px auto 0% ;
+    padding-top: 3cm;
+    width:80%;
+   
+}
+.title{
+    text-align: center;
+    text-transform: uppercase;
+}
+.heading{
+    font-size: 40px;
+    text-align: center;
+    color: #ffff;
+    margin-bottom: 40px;
+}
+.table{
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 15px  15px 15px 15px ;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(17, 19, 18, 0.486);
+}
+.table thead{
+    background-color:#36304a ;
+    margin-block: 26px;
+}
+.table thead tr th{
+    font-size: 20px;
+    font-weight:600;
+    letter-spacing: 0.35px;
+    color: rgb(216, 215, 215);
+    opacity: 1;
+    padding: 12px;
+    vertical-align: top;
+    
+   
+}
+
+tr:nth-child(odd){
+  background-color: #343535a2;
+}
+.table tr td{
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 0.35px;
+    font-weight: normal;
+    color: rgb(216, 215, 215);
+    background-color: rgba(137, 169, 187, 0.767);
+    padding: 15px 14px;
+    text-align: center;
+       
+}
+.Lbutton {
+    float: right;
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: medium;
+    border: 2px solid #3f2c26;
+    background:transparent;
+    color: rgb(20, 19, 19);
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+  }
+  .spon{
+    background:linear-gradient(135deg, #149209, #06c595);
+    height: 100%;
+    width: 100%;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+  }
+  .Lbutton:hover span{
+    background:linear-gradient(135deg, #148b09, #079e78);
+  }
+    
+  .content1{
+    position: relative;
+    margin: 130px auto;
+    text-align: center;
+    padding: 0 20px;
+  }
+  .content1 .text{
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #202020;
+  }
+  .content1 .p{
+    font-size: 2.1875rem;
+    font-weight: 600;
+    color: #202020;
+  }
+.edit{
+  float: right;
+    width: 70px;
+    height: 30px;
+    padding: auto;
+    text-align: center;
+    margin:auto;
+    border-radius: 25px;
+    font-weight: 600;
+    font-size: medium;
+    border: 2px solid #3f2c26;
+    background:transparent;
+    color: rgb(22, 21, 21);
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.delete{
+  float: right;
+    width: 70px;
+    height: 30px;
+    padding: auto;
+    text-align: center;
+    margin:auto;
+    margin-right: 7px;
+    border-radius: 25px;
+    font-weight: 600;
+    font-size: medium;
+    border: 2px solid #3f2c26;
+    background:transparent;
+    color: rgb(22, 21, 21);
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.spin{
+  background:linear-gradient(135deg, #940404, #d40404);
+  height: 100%;
+  width: 0;
+  border-radius: 25px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index:-1 ;
+  transition: 0.5s;
+  }
+  .delete:hover span{
+      width: 100%;
+  }
+  .span{
+    background:linear-gradient(135deg, #074670, #046d9e);
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index:-1 ;
+    transition: 0.5s;
+    }
+    .edit:hover span{
+        width: 100%;
+    }
+    .todo{
+      background-color: #b81818b4;
+      float: right;
+    width: 70px;
+    height: 30px;
+    padding: auto;
+    text-align: center;
+    margin:auto;
+    margin-right: 7px;
+    border-radius: 25px;
+    font-weight: 600;
+    font-size: medium;
+    color: #740f0f;
+    position: relative;
+    overflow: hidden;
+
+    }
+    .doing{
+      background-color: #b88518b4;
+      float: right;
+    width: 70px;
+    height: 30px;
+    padding: auto;
+    text-align: center;
+    margin:auto;
+    margin-right: 7px;
+    border-radius: 25px;
+    font-weight: 600;
+    font-size: medium;
+    color: #74590f;
+    position: relative;
+    overflow: hidden;
+
+    }
+  .done{
+    background-color: #2bb818b4;
+    float: right;
+  width: 70px;
+  height: 30px;
+  padding: auto;
+  text-align: center;
+  margin:auto;
+  margin-right: 7px;
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: medium;
+  color: #2c740f;
+  position: relative;
+  overflow: hidden;
+
+  }
